@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#323232">
+  <title>River Hsu Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/wavesurfer.js@7"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="desktop">
+      <a href="index.html" class="logo"><img src="resources/riv-logo.png"></a>
+      <a href="#proj"><h3>Projects</h3></a>
+      <a href="#skills"><h3>Skills</h3></a>
+    </nav>
+    <nav class="mobile">
+      <a href="index.html" class="logo"><img src="resources/riv-logo.png"></a>
+      <a href="#proj"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-window-stack" viewBox="0 0 16 16">...</svg></a>
+      <a href="#skills"><svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">...</svg></a>
+    </nav>
+  </header>
+
+  <div class="cursor"></div>
+
+  <div class="intro">
+  <h1>River Hsu</h1>
+  <h3 class="tagline">Composer • Music Producer • Sound Designer</h3>
+  <p class="bio">Crafting cinematic scores and soundscapes for games, films, and digital worlds.</p>
+</div>
+
+  <!-- Featured Video Section -->
+  <div class="section-header">
+    <h2>Featured Video</h2>
+  </div>
+
+  <div class="featured-gallery">
+    <div class="featured-video-container">
+      <iframe
+        src="https://www.youtube.com/embed/UY8rXCdv5lA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+
+    <div class="section-header"><h2>Projects</h2></div>
+    <div id="proj" class="proj">
+
+      <!-- Project Template (Repeat this block with appropriate index and src) -->
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/Cliff.png" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="0" data-src="resources/Tail of Two.wav">
+            <h1>Tail of Two</h1>
+          </div>
+          <div class="waveform" id="waveform0"></div>
+          <div class="desc"><p>Composed and produced in Ableton Live 11, this piece was crafted for a 2D puzzle platformer, evoking a sense of beauty and quiet wonder as it follows the journey of a spirit cat.</p></div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/Dragon4.png" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="3" data-src="resources/Boss Demo 3 Portfolio Render.wav">
+            <h1>Face Behind the Mask</h1>
+          </div>
+          <div class="waveform" id="waveform3"></div>
+          <div class="desc"><p>Composed and produced in Ableton Live 11, this track was crafted for a climactic horror boss fight, designed to heighten tension, unease, and a sense of dark grandeur. </p></div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/Dragon3.png" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="4" data-src="resources/Tense Pier Track Final.wav">
+            <h1>Drowning Tide</h1>
+          </div>
+          <div class="waveform" id="waveform4"></div>
+          <div class="desc"><p>Composed and produced in Ableton Live 11, this piece was crafted for a tense and challenging 2D platforming puzzle level featured in Mariposa.</p></div>
+        </div>
+      </div>
+
+      <!-- Repeat this template for each additional track -->
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/Dragon1.png" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="1" data-src="resources/Breath Away V3.wav">
+            <h1>Breath Away</h1>
+          </div>
+          <div class="waveform" id="waveform1"></div>
+          <div class="desc"><p>Fantasy Music Project, Composed and Produced in Ableton Live 11</p></div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/RainOnTheSunImg.jpeg" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="2" data-src="resources/Cinema V2.wav">
+            <h1>Rain on The Sun</h1>
+          </div>
+          <div class="waveform" id="waveform2"></div>
+          <div class="desc"><p>Fantasy Music Project, Composed and Produced in Ableton Live 11</p></div>
+        </div>
+      </div>
+
+      <div class="responsive">
+        <div class="gallery">
+          <a target="_blank"><img src="resources/Dragon2.png" alt="Fantasy Production"></a>
+          <p>Artist: Rvvr</p>
+          <div class="playButton">
+            <img src="resources/playButton.png" class="playBtn" data-index="5" data-src="resources/Rush.wav">
+            <h1>Rush in the Rain</h1>
+          </div>
+          <div class="waveform" id="waveform5"></div>
+          <div class="desc"><p>Fantasy Music Project, Composed and Produced in Ableton Live 11</p></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-header"><h2>Skills</h2></div>
+    <div id="skills" class="skills">
+      <img src="resources/Python-logo.png" alt="Python Logo">
+      <img src="resources/java-logo.png" alt="Java Logo">
+      <img src="resources/csharp-logo.png" alt="Csharp Logo">
+      <img src="resources/AbletonLogo.png" alt="Ableton Logo">
+    </div>
+    <div class="small-header"><h3>Academic Background</h3></div>
+    <div class="school-description">
+      <h3 class="academic">University of California San Diego</h3>
+      <h4>Undergraduate - Class of 2027</h4>
+    </div>
+  </main>
+
+  <footer>
+    <p>Website by River Hsu</p>
+    <p>Email: rihsu@ucsd.edu</p>
+  </footer>
+
+  <script src="mouseScript.js"></script>
+  
+  <script>
+    const playButtons = document.querySelectorAll('.playBtn');
+    const wavesurfers = {};
+
+    playButtons.forEach((btn) => {
+      const index = btn.dataset.index;
+      const src = btn.dataset.src;
+      const waveformId = `#waveform${index}`;
+
+      const ws = WaveSurfer.create({
+        container: waveformId,
+        waveColor: '#000000',
+        progressColor: '#A02222',
+        url: src,
+        barWidth: 1,
+        height: 90,
+        barRadius: 4
+      });
+
+      wavesurfers[index] = ws;
+
+      btn.addEventListener('click', () => {
+        ws.playPause();
+        btn.src = ws.isPlaying() ? "resources/pauseButton.png" : "resources/playButton.png";
+      });
+
+      ws.on('finish', () => {
+        btn.src = "resources/playButton.png";
+      });
+    });
+  </script>
+
+  
+</body>
+</html>
+
+
