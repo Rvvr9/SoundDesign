@@ -176,6 +176,14 @@ h3 {
   padding-bottom: 8px;
 }
 
+.gallery iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;  /* Keeps correct proportions */
+  border-radius: 12px;
+  margin: 0 auto; /* centers the iframe */
+}
 
 p {
   margin-left: 2%;
