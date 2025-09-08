@@ -4,7 +4,6 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  cursor: none;
 }
 
 .intro {
@@ -96,17 +95,6 @@ body::before {
   .featured-gallery {
     width: 95%;
     padding: 10px;
-  }
-}
-
-/* Remove cursor on mobile devices */
-@media (max-width: 412px) {
-  body, html {
-    cursor: none; /* Hides the cursor */
-  }
-
-  .cursor {
-    display: none; /* Hides the custom cursor element */
   }
 }
 
@@ -230,11 +218,6 @@ header a {
 header img {
   height: 70px;
   margin-top: 5px;
-}
-
-a:hover {
-  cursor: none;
-  text-decoration: line-through;
 }
 
 /* Intro */
@@ -462,30 +445,6 @@ footer p {
   flex-direction: row;
   margin-top: 100px;
   width: 100%;
-}
-
-/* cursor */
-.cursor {
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transition-property: background, transform;
-  transform-origin: -15% -15%;
-  z-index: 10;
-}
-
-.link-grow {
-  transform: scale(.25);
-  background: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
 }
 
 @keyframes pulseGlow {
