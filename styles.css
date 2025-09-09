@@ -152,8 +152,8 @@ h3 {
 .section-header {
   display: flex;
   justify-content: center;
-  margin-top: 80px;
-  margin-bottom: 20px;
+  margin-top: calc(var(--proj-gap) * 2); /* breathing room above */
+  margin-bottom: var(--proj-gap); /* equal to grid gap */
 }
 
 .section-header h2 {
@@ -268,9 +268,9 @@ header img {
 .proj {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;              /* consistent spacing between boxes */
-  padding: 20px;          /* same spacing around the whole grid */
-  box-sizing: border-box; /* make padding behave properly */
+  gap: var(--proj-gap);
+  padding: var(--proj-gap);
+  margin-bottom: var(--proj-gap); /* equal space below each section */
 
 }
 
@@ -279,22 +279,26 @@ header img {
   display: flex;
 }
 
+
+:root {
+  --proj-gap: 20px; /* single source of truth */
+}
+
 div.gallery {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: space-between; /* keeps description pushed down */
+  height: 100%; /* fills the grid cell */
   width: 100%;
 
   padding: 10px;
-  margin: 0; /* remove margin so only grid gap controls spacing */
-  
+  margin: 0; /* remove margin since grid handles spacing */
   border-radius: 20px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.08); /* semi-transparent white */
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* soft outer glow */
+  border: 1px solid rgba(255, 255, 255, 0.15); /* subtle inner edge */
   transition: all 0.3s ease;
 }
 
