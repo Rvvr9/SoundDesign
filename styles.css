@@ -268,9 +268,9 @@ header img {
 .proj {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: var(--proj-gap);
+  column-gap: var(--proj-gap); /* horizontal spacing */
+  row-gap: var(--proj-gap);    /* vertical spacing */
   padding: var(--proj-gap);
-  margin-bottom: var(--proj-gap); /* equal space below each section */
 
 }
 
