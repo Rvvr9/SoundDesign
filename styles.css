@@ -264,6 +264,10 @@ header img {
   }
 }
 
+:root {
+  --proj-gap: 20px; /* single source of truth */
+}
+
 /* Image Gallery */
 .proj {
   display: grid;
@@ -272,12 +276,6 @@ header img {
   row-gap: var(--proj-gap);    /* vertical spacing */
   padding: var(--proj-gap);
 
-}
-
-
-
-:root {
-  --proj-gap: 20px; /* single source of truth */
 }
 
 div.gallery {
