@@ -292,11 +292,14 @@ div.gallery {
   width: 100%;
 
   padding: 10px;
-  margin: 0; /* remove margin since grid handles spacing */
+  margin: 0; /* grid gap handles spacing */
   border-radius: 20px;
+
   background: rgba(255, 255, 255, 0.08); /* semi-transparent white */
+  background-clip: padding-box; /* 👈 prevents background bleed into gap */
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5); /* soft outer glow */
   border: 1px solid rgba(255, 255, 255, 0.15); /* subtle inner edge */
   transition: all 0.3s ease;
