@@ -275,7 +275,6 @@ header img {
   column-gap: var(--proj-gap); /* horizontal spacing */
   row-gap: var(--proj-gap);    /* vertical spacing */
   padding: var(--proj-gap);
-
 }
 
 div.gallery {
