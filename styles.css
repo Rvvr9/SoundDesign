@@ -266,21 +266,27 @@ header img {
 
 /* Image Gallery */
 .proj {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 20px; /* spacing between cards */
+  justify-items: center; /* centers the cards in their grid cells */
 
 }
 
 .responsive {
+  width: 100%;
   display: flex;
-  align-items: center;
-  width: 475px;
 }
 
 div.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* keeps description pushed down */
+  height: 100%; /* fills the grid cell */
+  width: 100%;
+
   padding: 10px;
-  margin: 10px;
+  margin: 0; /* remove margin since grid handles spacing */
   border-radius: 20px;
   background: rgba(255, 255, 255, 0.08); /* semi-transparent white */
   backdrop-filter: blur(10px);
