@@ -529,6 +529,28 @@ footer p {
   footer {
     margin-bottom: 110px;
   }
+  /* Make project grids responsive */
+
+/* Tablet view: 2 columns */
+@media (max-width: 1024px) {
+  .proj {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile view: 1 column */
+@media (max-width: 768px) {
+  .proj {
+    grid-template-columns: 1fr;
+    padding: 10px;
+    row-gap: 20px;
+  }
+
+  /* Optional: make each gallery stretch nicely */
+  .proj .gallery {
+    width: 100%;
+    justify-self: center;
+  }
 
   
 }
